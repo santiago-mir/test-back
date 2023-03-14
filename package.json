@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vaadin/router": "1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "9.15.0",
+    "firebase-admin": "^11.5.0",
+    "lodash": "4.17.21",
+    "nanoid": "3.3.4",
+    "parcel": "2.8.2"
+  },
+  "scripts": {
+    "dev":"nodemon --watch ./server/index.ts --exec ts-node ./server/dev.ts",
+    "dev:back": "ts-node ./server/index.ts",
+    "dev:front": "parcel ./front/index.html",
+    "build:back": "tsc",
+    "start": "node ./server/index.js"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "nodemon": "^2.0.21",
+    "process": "0.11.10"
+  }
+}
